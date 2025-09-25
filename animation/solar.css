@@ -181,3 +181,8 @@
         transform: rotate(360deg) translate(220px);
     }
 }
+
+
+body{
+    background-color: black;
+}
