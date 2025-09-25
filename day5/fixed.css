@@ -1,0 +1,39 @@
+/* Apply to all elements to remove default browser spacing and fix box-sizing */
+* {
+  margin: 0;              /* Remove default outer spacing */
+  padding: 0;             /* Remove default inner spacing */
+  box-sizing: border-box; /* Include padding and border within width/height */
+}
+
+/* Style for the header (h1) */
+h1 {
+  background-color: blueviolet; /* Set a violet background for visibility */
+  position: fixed;              /* Fix the header at the top of the viewport */
+  top: 0px;                     /* Align to top edge */
+  left: 0px;                    /* Align to left edge */
+  right: 0px;                   /* Stretch to right edge */
+  height: 60px;                 /* Set height of the header */
+  z-index: 2;                   /* Ensure header stays above footer if overlapped */
+}
+
+
+
+
+/* Style for main content */
+main {
+  padding-top: 60px; 
+  /* Add padding equal to header height to prevent content from hiding behind the fixed header */
+  padding-bottom: 60px;
+  /* Add padding equal to footer height to prevent content from hiding behind the fixed footer */
+}
+
+/* Style for the footer */
+footer {
+  background-color: darkmagenta; /* Set a visible background color */
+  position: fixed;               /* Fix the footer at the bottom of the viewport */
+  bottom: 0px;                   /* Align to bottom edge */
+  left: 0px;                     /* Align to left edge */
+  right: 0px;                    /* Stretch to right edge */
+  height: 60px;                  /* Set footer height */
+  z-index: 1;                    /* Keep footer below header if they overlap */
+}

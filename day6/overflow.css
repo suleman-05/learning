@@ -1,0 +1,30 @@
+div {
+    background-color: blueviolet;  /* Sets background color for visibility */
+    height: 200px;                 /* Sets fixed height to allow overflow to be tested */
+
+    /* 
+    Below are different overflow properties.
+    Only the LAST one written will take effect — here it's `overflow: auto;`.
+
+    overflow: visible;  
+    → Default behavior.
+    → Content that overflows the box is still shown outside.
+    → No scrollbars.
+
+    overflow: hidden;
+    → Extra content is cut off.
+    → No scrollbars are shown — content is simply not visible.
+
+    overflow: scroll;
+    → Always shows scrollbars (horizontal/vertical), even if not needed.
+    → User can scroll to see hidden content.
+
+    overflow: auto;
+    → Best and most flexible.
+    → Scrollbars appear **only when needed**.
+    → Preferred choice in most real-world layouts.
+
+    */
+
+    overflow: auto;  /* ✅ This one takes effect — scrollbars only appear if content overflows */
+}

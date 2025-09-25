@@ -1,0 +1,78 @@
+/* 
+  ❌ OLD CODE (commented and not applied)
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    → This should reset default spacing and fix box sizing, but since it's commented out, it has no effect.
+    → Without this, default browser margins/paddings may cause unexpected gaps.
+
+.b1
+{
+    background-color: blueviolet;
+}
+→ Basic background color applied, but no height or content, so it may not be visible without scrolling.
+
+.b2{
+    background-color: blue;
+}
+→ Same as .b1 — needs height or content for full effect.
+
+.hi{
+    background-color: crimson;
+    position:sticky;
+}
+→ ❌ Incomplete: position is sticky, but without `top`, it won’t stick — behaves like `relative`.
+
+*/
+
+
+/* ✅ NEW WORKING CODE */
+
+.hi {
+    background-color: crimson;      /* Red background for visibility */
+    position: sticky;               /* Makes the element stick when it reaches 'top' */
+    top: 0px;                       /* Required offset for sticky to activate */
+    color: white;                   /* Makes text readable on dark background */
+    padding: 20px;                  /* Adds space inside the element */
+    font-size: 22px;                /* Increases text size */
+    z-index: 1;                     /* Keeps it above other content when overlapping */
+}
+
+.b1 {
+    background-color: blueviolet;  /* Violet background block (no height defined) */
+    /* Should be scrollable or contain content to demonstrate sticky effect */
+}
+
+.b2 {
+    background-color: blue;        /* Blue background block (same as above) */
+}
+
+/* ✅ Universal reset - always write this at the bottom or top */
+* {
+    margin: 0;              /* Removes default margin from all elements */
+    padding: 0;             /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border inside width/height */
+}
+
+/* 
+📝 NOTE: Difference between sticky and fixed:
+
+position: fixed;
+→ Element is always fixed to the viewport.
+→ It never moves even when you scroll.
+→ Useful for headers, footers, or floating buttons.
+
+position: sticky;
+→ Element scrolls normally until it hits the offset (like top: 0).
+→ Then it sticks at that position while the parent/container is visible.
+→ Commonly used for sticky headers inside sections.
+
+✅ Sticky is dynamic based on scroll, while fixed is static relative to screen.
+*/
+
+
+
+/* top:0px;  is very imp*/

@@ -1,0 +1,18 @@
+/* h1 {
+    color: blueviolet;
+    background-color: azure;
+    clip-path: view-box;
+} */
+ 
+/* it will change the all the h2 tag in section */
+
+/* section h2
+{
+    color: blueviolet;
+} */
+
+/* it will only change the child  */
+section >h2
+{
+    color: blueviolet;
+}

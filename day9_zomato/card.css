@@ -1,0 +1,136 @@
+/* Styling the image */
+.hi {
+  height: 200px;             /* Set fixed height for the image */
+  width: 300px;              /* Set fixed width to match card */
+  border-radius: 20px;       /* Makes the image corners rounded */
+}
+
+/* Global reset for margin */
+* {
+  margin: 0%;                /* Removes default margin from all elements */
+}
+
+/* Card container styling */
+.card {
+  display: inline-block;           /* Allows block-like element but in a line (respects width/height) */
+  width: 300px;                    /* Matches image width for alignment */
+  border: 2px solid transparent;   /* Sets up space for border but hides it initially */
+  border-color: rgb(243, 225, 227); /* Light pinkish border like Zomato's base card color */
+  border-radius: 16px;             /* Rounded edges for smooth card look (optional but modern) */
+  transition: border-color 0.3s ease; /* Smooth transition when hovering */
+}
+
+/* Top section: restaurant name + rating */
+.restraunt {
+  display: inline-block;   /* Keeps it inline but allows width/height */
+  height: 20px;            /* Sets fixed height */
+  width: 300px;            /* Full width to align name and rating inside */
+  position: relative;      /* Needed to position .rating absolutely inside */
+}
+
+/* Restaurant name text */
+.name {
+  font-weight: 1000;       /* Makes the name boldest (strong emphasis) */
+}
+
+/* Rating badge */
+.rating {
+  position: absolute;      /* Positioned inside .restraunt using top/right */
+  right: 5px;              /* Pushes to right side of parent */
+  top: 2px;                /* Pushes slightly down for alignment */
+  background-color: rgb(72, 148, 49); /* Green background like Zomato rating badge */
+  border-radius: 4px;      /* Small rounded badge */
+  color: aliceblue;        /* Light color text for contrast on green */
+}
+
+/* Food section: cuisine and price */
+.food {
+  display: inline-block;   /* Keeps structure similar to .restraunt */
+  height: 20px;
+  width: 300px;
+  position: relative;      /* Enables .price to be placed inside */
+}
+
+/* Price text aligned right */
+.price {
+  position: absolute;      /* Absolutely position inside .food */
+  right: 5px;              /* Push to right */
+  top: 2px;                /* Align vertically */
+}
+
+/* Place section: location and distance */
+.place {
+  display: inline-block;   /* Structured similarly to other sections */
+  height: 20px;
+  width: 300px;
+  position: relative;      /* Needed for .distance absolute positioning */
+}
+
+/* Distance info aligned right */
+.distance {
+  position: absolute;      /* Placed at top-right inside .place */
+  right: 5px;
+  top: 2px;
+  font-weight: 400;        /* Normal weight for readability */
+  font-size: 12px;         /* Slightly smaller to show it’s less important */
+}
+
+/* Common text color for foodname, price, placename */
+.foodname,
+.price,
+.placename {
+  color: rgb(97, 92, 92);  /* Greyish text — not too bold, keeps focus on title */
+}
+
+/* Hover effect for the card (like Zomato) */
+.card:hover {
+  border-color: white;     /* Changes border to white on hover for soft glowing effect */
+  /* You can add box-shadow for more glow like Zomato style if needed */
+}
+
+
+.box
+{
+  display:inline-block
+}
+.zomato
+{
+  font-size:15px;
+  color: rgb(235, 13, 13);
+  margin-left:20px;
+
+}
+.log,.sign,.search
+{
+  margin-left:20px;
+}
+
+.first
+{
+  margin:20px;
+}
+.log,.sign
+{
+  border:none;
+}
+
+.din,.dil,.night
+{ 
+  height:30px;
+  width:30px;
+}
+.din{
+  margin-left:20px;
+}
+.second,.txt
+{
+  display:inline-block;
+}
+
+.txt
+{ 
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  color: rgb(127, 121, 121);
+}

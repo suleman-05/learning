@@ -1,0 +1,183 @@
+/* Main container holding the sun and planets */
+.orbit {
+    display: flex;                          /* Center content horizontally */
+    justify-content: center;
+    align-items: center;                    /* Center content vertically */
+    background-color: rgb(10, 10, 10);      /* Dark space background */
+    width: 100vw;                           /* Full viewport width */
+    height: 100vh;                          /* Full viewport height */
+    position: relative;                     /* Needed for absolute positioning of planets */
+}
+
+/* Base styling for all planets */
+.planet {
+    border-radius: 50%;                     /* Make all planets circular */
+}
+
+/* Static sun at the center */
+.sun {
+    width: 70px;
+    height: 70px;
+    background-color: yellow;              /* Yellow color for the sun */
+}
+
+/* Mars planet styling and orbit animation */
+.mars {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 68, 0);     /* Orange-red color for Mars */
+    position: absolute;
+    top: 50%;                               /* Position at the center */
+    left: 50%;
+    animation-name: mar;                   /* Use 'mar' keyframe */
+    animation-duration: 40s;               /* One full orbit takes 40 seconds */
+    animation-iteration-count: infinite;   /* Loop the animation forever */
+    animation-timing-function: linear;     /* Constant speed */
+}
+
+@keyframes mar {
+    from {
+        transform: rotate(0deg) translate(150px); /* Start rotation from center, 150px away */
+    }
+    to {
+        transform: rotate(360deg) translate(150px); /* Complete 360-degree orbit */
+    }
+}
+
+/* Mercury styling and orbit animation */
+.mercury {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 160, 160);  /* Greyish for Mercury */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: mercu;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mercu {
+    from {
+        transform: rotate(0deg) translate(100px);
+    }
+    to {
+        transform: rotate(360deg) translate(100px);
+    }
+}
+
+/* Venus styling and orbit animation */
+.venus {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(11, 91, 220);    /* Blue shade for Venus */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: ven;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ven {
+    from {
+        transform: rotate(0deg) translate(60px);
+    }
+    to {
+        transform: rotate(360deg) translate(60px);
+    }
+}
+
+/* Earth styling and orbit animation */
+.earth {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(11, 220, 39);    /* Greenish for Earth */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: ear;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ear {
+    from {
+        transform: rotate(0deg) translate(120px);
+    }
+    to {
+        transform: rotate(360deg) translate(120px);
+    }
+}
+
+/* Jupiter (spelled as jupeter) styling and orbit animation */
+.jupeter {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(192, 11, 220);   /* Purple for Jupiter */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: jup;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jup {
+    from {
+        transform: rotate(0deg) translate(180px);
+    }
+    to {
+        transform: rotate(360deg) translate(180px);
+    }
+}
+
+/* Neptune styling and orbit animation */
+.neptune {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(54, 45, 59);     /* Dark color for Neptune */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: nep;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes nep {
+    from {
+        transform: rotate(0deg) translate(200px);
+    }
+    to {
+        transform: rotate(360deg) translate(200px);
+    }
+}
+
+/* Uranus (spelled as urenus) styling and orbit animation */
+.urenus {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(101, 139, 221);  /* Light blue for Uranus */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: ure;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ure {
+    from {
+        transform: rotate(0deg) translate(220px);
+    }
+    to {
+        transform: rotate(360deg) translate(220px);
+    }
+}

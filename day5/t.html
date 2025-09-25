@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .b1 {
+      background-color: blueviolet;
+      height: 300px;
+      color: white;
+      text-align: center;
+      line-height: 300px;
+      font-size: 24px;
+    }
+
+    .hi {
+      background-color: crimson;
+      position: sticky;
+      top: 0px; /* Sticky will stick this element to top while scrolling */
+      color: white;
+      padding: 20px;
+      font-size: 22px;
+      z-index: 1;
+    }
+
+    .b2 {
+      background-color: blue;
+      height: 1000px;
+      color: white;
+      text-align: center;
+      line-height: 1000px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="b1">Block 1 (Scroll Down)</div>
+
+  <div class="hi">Sticky Element</div>
+
+  <div class="b2">Block 2 (Scroll Under Sticky)</div>
+
+</body>
+</html>

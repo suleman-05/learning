@@ -1,0 +1,43 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+  
+    height:1000px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    margin-left:10%;
+
+} 
+
+.white:hover
+{
+    background-color: rgb(218, 213, 213);
+    transition: all;
+    transition-duration: 100ms;
+}
+.black:hover
+{      transition: all;
+    background-color: rgb(63, 62, 62);
+     transition-duration: 100ms;
+     
+}
+
+body
+{
+    background-color: rgb(127, 135, 135);
+}
+.white
+{
+    background-color: aliceblue;
+}
+.black
+{
+    background-color: black;
+       
+}

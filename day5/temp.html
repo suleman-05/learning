@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: darkblue;
+      color: white;
+      padding: 10px;
+     
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background-color: darkred;
+      color: white;
+      text-align: center;
+      padding: 10px;
+ 
+    }
+
+    main {
+      margin-top: 60px;  /* Push down to avoid overlap with fixed header */
+      margin-bottom: 60px; /* Push up to avoid overlap with fixed footer */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Fixed Header</header>
+  <main>
+    <p>Scrollable content...</p>
+    <p style="margin-top: 1000px;">End</p>
+  </main>
+  <footer>Fixed Footer</footer>
+
+</body>
+</html>
