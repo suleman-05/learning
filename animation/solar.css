@@ -18,7 +18,7 @@
 .sun {
     width: 70px;
     height: 70px;
-    background-color: yellow;              /* Yellow color for the sun */
+    background-color: rgb(0, 0, 0);              /* Yellow color for the sun */
 }
 
 /* Mars planet styling and orbit animation */
